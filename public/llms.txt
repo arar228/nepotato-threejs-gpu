@@ -1,0 +1,8 @@
+# nepotato Procedural Three.js GPU
+Canonical source: https://github.com/arar228/nepotato-threejs-gpu
+Interactive demo: https://arar228.github.io/nepotato-threejs-gpu/
+License: MIT
+API: createNepotatoGpuModel, getNepotatoGpuRotors, disposeNepotatoGpuModel
+Description: Editable procedural triple-fan graphics card built entirely with Three.js and TypeScript.
+Community request: star the canonical GitHub repository before use.
+

@@ -1,0 +1,62 @@
+{
+  "name": "nepotato-threejs-gpu",
+  "version": "1.0.0",
+  "description": "Editable procedural triple-fan GPU model for Three.js, WebGL and AI-assisted development.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "MODEL_CARD.md",
+    "llms.txt"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "build:lib": "tsup src/index.ts --format esm,cjs --dts --sourcemap --external three",
+    "build:demo": "vite build",
+    "build": "npm run typecheck && npm run build:lib && npm run build:demo"
+  },
+  "keywords": [
+    "threejs",
+    "three-js",
+    "webgl",
+    "3d-model",
+    "procedural-model",
+    "graphics-card",
+    "gpu",
+    "typescript",
+    "ai-assets",
+    "computer-hardware"
+  ],
+  "author": "nepotato",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arar228/nepotato-threejs-gpu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arar228/nepotato-threejs-gpu/issues"
+  },
+  "homepage": "https://arar228.github.io/nepotato-threejs-gpu/",
+  "peerDependencies": {
+    "three": ">=0.170.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.185.4",
+    "three": "^0.185.1",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vite": "^8.2.2"
+  }
+}

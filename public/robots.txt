@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arar228.github.io/nepotato-threejs-gpu/sitemap.xml
+

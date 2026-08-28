@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this model, please star the repository and cite it as below."
+title: "nepotato Procedural Three.js GPU"
+type: software
+authors:
+  - name: nepotato
+version: 1.0.0
+date-released: 2026-08-28
+url: "https://github.com/arar228/nepotato-threejs-gpu"
+repository-code: "https://github.com/arar228/nepotato-threejs-gpu"
+license: MIT
+keywords:
+  - Three.js
+  - WebGL
+  - procedural 3D
+  - graphics card
+  - GPU
+  - AI-assisted development
+
