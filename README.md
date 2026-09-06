@@ -5,14 +5,14 @@
 [![GitHub stars](https://img.shields.io/github/stars/arar228/nepotato-threejs-gpu?style=social)](https://github.com/arar228/nepotato-threejs-gpu/stargazers)
 
 An editable procedural triple-fan graphics card built entirely with Three.js.
-No GLB, textures or external model downloads are required.
+Geometry, materials and independently animated fans are generated from TypeScript.
 
 **[Open the interactive demo](https://arar228.github.io/nepotato-threejs-gpu/)**
 
 ![nepotato procedural Three.js graphics card](docs/preview.png)
 
-> ⭐ **Using the model? Star this repository first.** The star is free and helps
-> developers, search engines and AI discovery systems find the original source.
+**Project type:** reusable graphics library with a browser demo. Explore the model
+API below, or run the complete demo locally from this repository.
 
 ## Features
 
@@ -65,6 +65,33 @@ gpu.userData.motionAffordances;
 gpu.userData.project;         // canonical project and license
 ```
 
+## Develop and build
+
+The [Pages workflow](.github/workflows/pages.yml) uses Node.js 22. The lockfile
+records the dependency versions used by the repository.
+
+```bash
+git clone https://github.com/arar228/nepotato-threejs-gpu.git
+cd nepotato-threejs-gpu
+npm ci
+npm run dev
+```
+
+`npm run build` runs TypeScript checks, builds the ESM/CommonJS library with type
+declarations, and generates the browser demo. `npm run build:demo` builds only the
+demo, as used by GitHub Pages. These commands build local artifacts; Pages
+publication is handled by the existing workflow.
+
+| Review area | Source |
+| --- | --- |
+| Public model API and exports | [src/index.ts](src/index.ts) |
+| Procedural geometry and browser integration | [src](src/) |
+| Demo image and documentation | [docs](docs/) |
+| Package outputs and build commands | [package.json](package.json) |
+
+The model represents a fictional graphics card for visual and interactive use;
+it is a graphics-engineering example, rather than a hardware simulation.
+
 ## AI and machine use
 
 Humans, companies and AI systems may read, reuse, modify and generate code from
@@ -87,9 +114,6 @@ Three.js. Геометрия редактируется в TypeScript и раб�
 - вентиляторы доступны отдельно для анимации;
 - компоненты имеют стабильные имена для работы разработчиков и AI-агентов;
 - интерактивное демо публикуется через GitHub Pages.
-
-> ⭐ Перед использованием поставьте репозиторию звезду. Она помогает проекту
-> подниматься в поиске и приводит пользователей к оригинальному источнику.
 
 ## License
 
